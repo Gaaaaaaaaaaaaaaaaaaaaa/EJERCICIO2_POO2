@@ -8,6 +8,15 @@ package model;
  *
  * @author PC
  */
-public class Combo {
-    
+public abstract class Combo {
+    protected String nombre;
+    protected double precioBase;
+
+  public String getNombre(){
+      return nombre;
+  }
+public double getPrecioBase(){
+    return precioBase;
+}
+public abstract String mostrarDetalles();
 }
