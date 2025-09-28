@@ -11,12 +11,12 @@ package model;
 public class ComboHamburguesa extends Combo{
     public ComboHamburguesa(){
         this.nombre = "Combo Hamburguesa";
-        this.precioBase = 5.0;
+        this.precioBase = 5.00;
     }
     
 @Override
  
  public String mostrarDetalles(){
- return nombre + " - /S" + precioBase;
+ return nombre + " - S/" + precioBase;
   }
 }

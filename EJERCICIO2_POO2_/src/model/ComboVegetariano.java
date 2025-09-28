@@ -11,11 +11,11 @@ package model;
 public class ComboVegetariano extends Combo {
     public ComboVegetariano() {
         this.nombre = "Combo Vegetariano";
-        this.precioBase = 7;
+        this.precioBase = 6.50;
     }
 
     @Override
     public String mostrarDetalles() {
-        return nombre + " - $" + precioBase;
+        return nombre + " - S/" + precioBase;
     }
 }
