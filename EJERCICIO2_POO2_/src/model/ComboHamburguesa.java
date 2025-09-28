@@ -8,6 +8,15 @@ package model;
  *
  * @author PC
  */
-public class ComboHamburguesa {
+public class ComboHamburguesa extends Combo{
+    public ComboHamburguesa(){
+        this.nombre = "Combo Hamburguesa";
+        this.precioBase = 5.0;
+    }
     
+@Override
+ 
+ public String mostrarDetalles(){
+ return nombre + " - /S" + precioBase;
+  }
 }
