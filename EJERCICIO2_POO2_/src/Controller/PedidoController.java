@@ -3,11 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Controller;
+import Factory.ComboFactory;
+import model.Combo; 
+import java.util.Set;
 
-/**
- *
- * @author PC
- */
 public class PedidoController {
-    
+    public Combo crearCombo(String tipoCombo){
+        return ComboFactory.crearCombo(tipoCombo);
+    }
+    public Set<String> obtenerTiposDisponibles(){
+        return ComboFactory.tiposDisponibles();
+    }
 }
