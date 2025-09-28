@@ -8,6 +8,14 @@ package model;
  *
  * @author PC
  */
-public class ComboVegetariano {
-    
+public class ComboVegetariano extends Combo {
+    public ComboVegetariano() {
+        this.nombre = "Combo Vegetariano";
+        this.precioBase = 7;
+    }
+
+    @Override
+    public String mostrarDetalles() {
+        return nombre + " - $" + precioBase;
+    }
 }
